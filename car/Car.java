@@ -1,4 +1,8 @@
-public class Car extends Vehicle{
+package car;
+
+import vehicle.Vehicle;
+
+public class Car extends Vehicle {
     private final CarDriver currentDriver;
 
     public Car(String licensePlate, String make, String model, boolean isAvailable, boolean isRented, CarDriver currentDriver) {
