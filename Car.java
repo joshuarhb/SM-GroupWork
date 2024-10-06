@@ -1,5 +1,3 @@
-package com.RentFast.App.Entities;
-
 public class Car extends Vehicle{
     private final CarDriver currentDriver;
 
