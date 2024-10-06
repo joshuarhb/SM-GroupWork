@@ -1,3 +1,5 @@
+package com.RentFast.App.Entities;
+
 public class Vehicle {
 
     private final String licensePlate;
