@@ -1,22 +1,28 @@
-package Services;
+package services;
 
-public class Issurance {
+import user.User;
+
+public class Issurance extends User {
 
     int issueTypeID;
-    int userID;
     int carID;
     int providerName;
     int validFrom;
     int validTo;
 
-    public Issurance(int issueTypeID, int userID, int carID, int providerName, int validFrom, int validTo) {
+    public Issurance(int userID) {
+        super(userID);
+    }
+
+    public Issurance(int userID, int issueTypeID, int carID, int providerName, int validFrom, int validTo) {
+        super(userID);
         this.issueTypeID = issueTypeID;
-        this.userID = userID;
         this.carID = carID;
         this.providerName = providerName;
         this.validFrom = validFrom;
         this.validTo = validTo;
     }
+
 
     public int getIssueTypeID() {
         return issueTypeID;
@@ -24,14 +30,6 @@ public class Issurance {
 
     public void setIssueTypeID(int issueTypeID) {
         this.issueTypeID = issueTypeID;
-    }
-
-    public int getUserID() {
-        return userID;
-    }
-
-    public void setUserID(int userID) {
-        this.userID = userID;
     }
 
     public int getCarID() {

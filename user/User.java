@@ -1,9 +1,9 @@
 package user;
 
 public class User {
-    private final int userID;
-    private final String userFirstName;
-    private final String userLastName;
+    private  int userID;
+    private  String userFirstName;
+    private  String userLastName;
     private String email;
     private int phoneNumber;
     private String address;
@@ -19,6 +19,10 @@ public class User {
         this.address = address;
         this.createDate = createDate;
     }
+
+    public User(int userID) {
+    }
+
 
     public int getUserID() {
         return userID;
