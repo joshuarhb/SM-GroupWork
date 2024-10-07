@@ -1,20 +1,22 @@
-package Services;
+package services;
 
-public class HireDriver {
-    private int driverID;
-    private int userID;
+
+public class Customize {
+
+    private int customizeID;
     private int carID;
-    private float ratePerHours;
+    private int userID;
     private int serviceID;
     private String startTime;
     private String endTime;
 
-    public int getDriverID() {
-        return driverID;
+    public int getCustomizeID() {
+        return customizeID;
     }
 
-    public void setDriverID(int driverID) {
-        this.driverID = driverID;
+
+    public void setCustomizeID(int customizeID) {
+        this.customizeID = customizeID;
     }
 
     public int getUserID() {
@@ -31,14 +33,6 @@ public class HireDriver {
 
     public void setCarID(int carID) {
         this.carID = carID;
-    }
-
-    public float getRatePerHours() {
-        return ratePerHours;
-    }
-
-    public void setRatePerHours(float ratePerHours) {
-        this.ratePerHours = ratePerHours;
     }
 
     public int getServiceID() {
